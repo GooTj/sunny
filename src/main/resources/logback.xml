@@ -1,0 +1,12 @@
+<configuration>
+
+    <appender name="GELF" class="de.siegmar.logbackgelf.GelfUdpAppender">
+        <graylogHost>39.106.71.119</graylogHost>
+        <graylogPort>12201</graylogPort>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="GELF" />
+    </root>
+
+</configuration>
