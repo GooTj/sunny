@@ -10,6 +10,7 @@ eureka:
     register-with-eureka: false
     service-url:
       defaultZone: http://39.106.71.119:8761/wooden/,http://39.106.71.119:8762/merry/
+    fetch-registry: false
   server:
     enable-self-preservation: false
 
