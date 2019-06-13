@@ -1,6 +1,6 @@
 mvn clean package -Dmaven.test.skip=ture
 
-docker build -t sunny:1.0 .
+docker build -t hub.c.163.com/jrxpay/sunny  .
 
 docker tag sunny hub.c.163.com/jrxpay/sunny
 
