@@ -1,8 +1,19 @@
 server:
-  port: 8762
+  port: 8763
+
 spring:
   application:
     name: sunny
+
 eureka:
   client:
     register-with-eureka: false
+    service-url:
+      defaultZone: http://39.106.71.119:8761/wooden/,http://39.106.71.119:8762/merry/
+  server:
+    enable-self-preservation: false
+
+#management:
+#  server:
+#    servlet:
+#      context-path: /
